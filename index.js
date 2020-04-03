@@ -5,7 +5,7 @@ const cors = require("cors");
 require('dotenv').config();
 
 var corsOptions = {
-  origin: "https://happy-carson-6ae06e.netlify.com" + (process.env.CLIENT || 3000)
+  origin: "https://localhost/" + (process.env.CLIENT || 3000)
 };
 
 app.use(cors(corsOptions));
